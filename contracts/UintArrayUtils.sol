@@ -110,8 +110,7 @@ library UintArrayUtils {
    * @return A new array (merging of a and b)
    */
   function concat(uint[] a, uint[] b) internal pure returns (uint[]) {
-    uint len = a.length + b.length;
-    uint[] memory c = new uint[](len);
+    uint[] memory c = new uint[](a.length + b.length);
 
     for (uint i = 0; i < a.length; i += 1) {
       c[i] = a[i];
